@@ -1,0 +1,20 @@
+#include <Servo.h>        
+Servo serwo;     
+ 
+void setup() 
+{ 
+  serwo.attach(11);   //serwomechanizm jest sterowany przez pin 11
+  serwo.write(90);    //ustawiamy na 90 stopni
+
+  Serial.begin (9600);
+  pinMode(8, OUTPUT); //trig
+  pinMode(9, INPUT); //echo
+  digitalWrite(8, LOW);
+}
+ 
+void loop() {
+   
+  //Serial.println(zmierzOdl());   
+                  
+  delay(500);
+}
