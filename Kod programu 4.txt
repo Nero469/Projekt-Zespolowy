@@ -1,0 +1,11 @@
+void loop() {
+
+  serwo.write(20);
+  delay(500);
+  serwo.write(90);
+  delay(500);
+  serwo.write(160);
+  delay(500);  
+  //Serial.println(zmierzOdl());   
+                         
+} 
